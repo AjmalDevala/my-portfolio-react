@@ -19,16 +19,27 @@ Animations: Smooth transitions and animations for a modern feel
 📂 Project Structure
 
 Portfolio/
+
 ├── public/
+│ 
 ├── src/
+│ 
 │   ├── assets/            # Images and icons
+│   │ 
 │   ├── components/        # Reusable components (Navbar, Footer, ProjectCard, etc.)
+│   │ 
 │   ├── pages/             # Pages or sections (Home, About, Projects, Contact)
+│   │ 
 │   ├── App.js             # Main App component
+│   │ 
 │   └── index.js           # Entry point
+│ 
 ├── tailwind.config.js     # Tailwind configuration
+│ 
 ├── postcss.config.js      # PostCSS configuration
+│ 
 ├── package.json           # Project dependencies and scripts
+│ 
 └── README.md              # Project documentation
 
 🎨 Styling
