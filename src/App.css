@@ -2,46 +2,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+body {
+  margin: 0; /* Ensure there's no default margin */
+}
+
 :root {
   --header-height: 3rem;
+  /* Base Colors */
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /* --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff; */
+  --hue: 220; /* Sets the base color to a blue hue */
+  --sat: 100%; /* Full saturation for vibrant accents */
 
-    /* Base Colors */
-    
-    --hue: 220; /* Sets the base color to a blue hue */
-    --sat: 100%; /* Full saturation for vibrant accents */
-  
-    /* Text and Background Colors */
-    --title-color: hsl(var(--hue), var(--sat), 85%); /* Light blue for titles */
-    --title-color-dark: hsl(var(--hue), var(--sat), 95%); /* Almost white for high contrast titles */
-    --text-color: hsl(var(--hue), 20%, 85%); /* Light grey for text for readability */
-    --body-color: hsl(220, 15%, 10%); /* Deep blue/grey for background */
-    --container-color: hsl(220, 20%, 18%); /* Slightly lighter grey for containers */
-  
-    /* Accent Colors */
-    --accent-color: hsl(350, 100%, 50%); /* Vibrant pink-red for buttons and highlights */
-    --accent-hover-color: hsl(350, 100%, 65%); /* Lighter pink-red for hover states */
-  
-    /* Example usage */
-    color: var(--title-color); /* Applies title color */
-    background-color: var(--body-color); /* Applies background color */
-  
+  /* Text and Background Colors */
+  --title-color: hsl(var(--hue), var(--sat), 85%); /* Light blue for titles */
+  --title-color-dark: hsl(
+    var(--hue),
+    var(--sat),
+    95%
+  ); /* Almost white for high contrast titles */
+  --text-color: hsl(
+    var(--hue),
+    20%,
+    85%
+  ); /* Light grey for text for readability */
+  --body-color: hsl(220, 15%, 10%); /* Deep blue/grey for background */
+  --container-color: hsl(
+    220,
+    20%,
+    18%
+  ); /* Slightly lighter grey for containers */
 
+  /* Accent Colors */
+  --accent-color: hsl(
+    350,
+    100%,
+    50%
+  ); /* Vibrant pink-red for buttons and highlights */
+  --accent-hover-color: hsl(
+    350,
+    100%,
+    65%
+  ); /* Lighter pink-red for hover states */
 
-  /* --title-color:#5b8291;
-  --title-color-dark:#2e424d;
-  --text-color:#79b9b8;
-  --body-color: rgb(233, 238, 242);
-  --container-color: #fff; */
+  /* Example usage */
+  color: var(--title-color); /* Applies title color */
+  background-color: var(--body-color); /* Applies background color */
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -49,7 +57,7 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 3rem;
   --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem; 
+  --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
@@ -164,7 +172,7 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 968px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -199,7 +207,7 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1080px) {
   .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
