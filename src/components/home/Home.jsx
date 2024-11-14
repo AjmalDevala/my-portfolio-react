@@ -8,16 +8,26 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Ajmal - Full Stack Software Developer</title>
+        <title>Ajmal U - Full Stack Developer | MERN Stack</title>
         <meta
           name="description"
-          content="Ajmal is a full-stack software developer skilled in building scalable web applications and responsive user interfaces using the MERN stack."
+          content="Ajmal U, a full-stack developer specializing in building scalable web applications and responsive interfaces using the MERN stack."
         />
         <meta
           name="keywords"
-          content="ajmal u, ajmaledevala, devala, full stack developer, MERN stack"
+          content="Ajmal U, Full Stack Developer, MERN Stack, React, Node.js, MongoDB, JavaScript, ajmaldevala ,devala"
         />
+        <meta
+          property="og:title"
+          content="Ajmal U - Full Stack Developer | MERN Stack"
+        />
+        <meta
+          property="og:description"
+          content="Portfolio of Ajmal U, showcasing skills in full-stack development with the MERN stack."
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
+
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__content grid">

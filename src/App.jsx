@@ -5,8 +5,9 @@ import Home from "./components/home/Home";
 // import Skills from "./components/skills/Skills";
 // import Services from "./components/services/Services";
 // import Portfolio from "./components/portfolio/Portfolio";
-// import Contact from "./components/contact/Contact";
+import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Qualifications from "./components/qualification/Qualifications";
 
 const App = () => {
   return (
@@ -17,8 +18,9 @@ const App = () => {
         {/* <About />
         <Skills />
         <Services />
-        <Portfolio />
-        <Contact /> */}
+        <Portfolio /> */}
+        <Qualifications />
+        <Contact />
       </main>
       <Footer />
     </>

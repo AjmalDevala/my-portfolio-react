@@ -97,13 +97,13 @@
   resize: none;
 }
 .footer__support {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center; /* Center the title and buttons */
 }
 
 .footer__support-title {
   font-size: 1.8rem;
-  /* color: #f39c12; Optional: Add color to the title */
   margin-bottom: 20px; /* Space below the title */
 }
 
