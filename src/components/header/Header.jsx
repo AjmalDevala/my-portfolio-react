@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../assets/newAvatar.png";
+import Logo from "../../assets/me-Photoroom.png";
 import "./header.css";
 import { Helmet } from "react-helmet-async";
 
