@@ -162,7 +162,7 @@ img {
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section__title,
@@ -234,7 +234,7 @@ img {
   }
 
   .section__subtitle {
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-2);
   }
 }
 
