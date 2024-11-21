@@ -11,7 +11,8 @@
     content="Ajmal is a passionate full-stack software developer skilled in building scalable web applications and responsive user interfaces using the MERN stack. Discover innovative projects, portfolio, and services offered." />
 
   <!-- Meta Keywords for SEO -->
-  <meta name="keywords" content="Ajmal u, full-stack developer, software developer, MERN stack, ajmaledevala, devala, web development, scalable applications" />
+  <meta name="keywords"
+    content="Ajmal u, full-stack developer, software developer, MERN stack, ajmaledevala, devala, web development, scalable applications" />
 
   <!-- Social Media Meta Tags -->
   <meta property="og:title" content="Ajmal - Full Stack Software Developer" />
@@ -29,10 +30,142 @@
 
   <!-- =============== UNICONS ================== -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <style>
+    * {
+      cursor: none;
+      /* Hide default cursor */
+    }
+
+    /* Custom Cursor Styles */
+    .custom-cursor {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: red;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease-in-out, top 0.1s ease-in-out, left 0.1s ease-in-out;
+    }
+
+    .custom-cursor-white {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: white;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease-in-out, top 0.1s ease-in-out, left 0.1s ease-in-out;
+    }
+
+    /* Cursor Expand Effect */
+    .expand {
+      transform: scale(2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Loader Styles */
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .loader-content {
+      text-align: center;
+    }
+
+    .loader-spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+    }
+
+    .loader-text {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #3498db;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursors -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-white"></div>
+
   <div id="root"></div>
+
+  <script>
+    // Loader Effect
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    });
+
+    // Custom Mouse Cursors
+    const cursor = document.querySelector('.custom-cursor');
+    const cursorWhite = document.querySelector('.custom-cursor-white');
+
+    // Move cursors with smooth transition
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+
+      cursor.style.left = `${x}px`;
+      cursor.style.top = `${y}px`;
+
+      cursorWhite.style.left = `${x}px`;
+      cursorWhite.style.top = `${y}px`;
+    });
+
+    // Cursor Expand Effect on Hover
+    document.querySelectorAll('a, button, .hover-target')
+      .forEach(element => {
+        element.addEventListener('mouseenter', () => {
+          cursor.classList.add('expand');
+        });
+        element.addEventListener('mouseleave', () => {
+          cursor.classList.remove('expand');
+        });
+      });
+  </script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
