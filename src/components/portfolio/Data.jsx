@@ -6,6 +6,8 @@ import Mahaseel from "../../assets/mahaseel_masr_logo.jpg";
 import starbugs from "../../assets/starbugs.jpg";
 import fotweb from "../../assets/fotweb.webp";
 import Evotym from "../../assets/Evotym.jpg";
+import FlexiCore from "../../assets/react app.jpg";
+import QuickBazaar from "../../assets/QuickBazaar.jpg";
 
 export const projectsData = [
   {
@@ -39,19 +41,39 @@ export const projectsData = [
     subtitle: "Football Player Selection Platform with Chat Integration",
     link: "https://github.com/AjmalDevala/FotWeb-User", // Link to source code
     category: "Personal Work",
-    status: "Source Code Available",  // Add a field to show that the source code is available
+    status: "Source Code Available", // Add a field to show that the source code is available
   },
   {
     id: 5,
     image: Evotym,
     title: "Evotym",
     subtitle: "E-commerce Application",
-    link: "https://github.com/AjmalDevala/EVO-TYM-website-",
+    link: "https://github.com/AjmalDevala/EVO-TYM",
     category: "Personal Work",
     status: "Source Code Available",
   },
   {
     id: 6,
+    image: QuickBazaar,
+    title: "QuickBazaar",
+    subtitle: " E-commerce platform for buying and selling.",
+    link: "https://github.com/AjmalDevala/QuickBazaar",
+    category: "Personal Work",
+    status: "Source Code Available",
+  },
+
+  {
+    id: 7,
+    image: FlexiCore,
+    title: "FlexiCore",
+    subtitle:
+      "Full-stack app with React, Express, MongoDB, and JWT authentication.",
+    link: "https://github.com/AjmalDevala/react-project",
+    category: "Personal Work",
+    status: "Source Code Available",
+  },
+  {
+    id: 8,
     image: work4,
     title: "Netflix Clone",
     subtitle: "Netflix clone using TMDB API",
@@ -60,11 +82,11 @@ export const projectsData = [
     status: "Source Code Available",
   },
   {
-    id: 7,
+    id: 9,
     image: starbugs,
     title: "Starbucks",
     subtitle: "Responsive Starbucks website design",
     link: "https://ajmaldevala.github.io/starbucks-static-/",
     category: "Personal Work",
-  }
+  },
 ];
