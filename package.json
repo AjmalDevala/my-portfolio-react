@@ -13,10 +13,12 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "lucide-react": "^0.460.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
     "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^7.0.1",
     "swiper": "^9.2.4"
   },
   "devDependencies": {
@@ -31,4 +33,3 @@
     "vite": "^4.3.2"
   }
 }
-
