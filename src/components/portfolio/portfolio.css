@@ -14,7 +14,7 @@
 
 .filter-button {
   padding: 0.75rem 1.5rem;
-  background-color: #f4f4f4;
+  background-color: #e0e0e0
   border: none;
   border-radius: 20px;
   font-size: 1rem;
@@ -38,7 +38,8 @@
 }
 
 .work__card {
-  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  background: linear-gradient(135deg, #e0e0e0, #b3ccff);
+
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 1.5rem;
@@ -60,6 +61,7 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
+  opacity: 0.9;
 }
 
 .work__title {
@@ -86,6 +88,31 @@
 .work__button:hover {
   color: #333;
   transform: translateX(5px);
+}
+
+.show-more-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem auto;
+  background-color:  #007cf4;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.show-more-button:hover {
+  background-color:  #007bf0 ;
+  transform: translateY(5px);
+}
+
+.show-more-button:active {
+  transform: scale(0.98);
 }
 
 /* Responsive Design */
