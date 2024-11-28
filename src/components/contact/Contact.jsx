@@ -120,6 +120,7 @@ const Contact = () => {
 
           <div className="contact__content">
             <h3 className="contact__title">Write me your Message</h3>
+            <h3 className="contact__title">Don't be shy, just say hi to me.</h3>
 
             <form ref={form} onSubmit={sendEmail} className="contact__form">
               <div className="contact__form-div">
