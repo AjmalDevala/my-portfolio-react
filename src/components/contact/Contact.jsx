@@ -6,6 +6,9 @@ import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const form = useRef();
+  const canonicalUrl = "https://ajmaldevala.netlify.app/"; // Replace with your actual portfolio URL
+  const socialImageUrl =
+    "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,41 +34,47 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Ajmal U - Full Stack Developer | MERN Stack</title>
+        {/* Basic Meta Tags */}
+        <title>Ajmal U - Full Stack Developer | MERN Stack Expert</title>
         <meta
           name="description"
-          content="Get in touch with Ajmal U, a full-stack developer specializing in MERN stack, for collaborations, queries, or job opportunities."
+          content="Ajmal U: A passionate full-stack developer crafting scalable web applications with expertise in React, Node.js, Express, and MongoDB. Transforming ideas into innovative digital solutions."
         />
+
+        {/* Extended Keywords */}
         <meta
           name="keywords"
-          content="contact, Ajmal U, Ajmaldevala,devala Full Stack Developer, MERN Stack, JavaScript, React, Node.js, MongoDB, developer contact"
+          content="Ajmal U, Full Stack Developer, MERN Stack Developer, Web Application Developer, React Developer, Node.js Engineer, MongoDB Expert, JavaScript Specialist, Front-end Developer, Back-end Developer, Web Development, Software Engineer, ajmaldevala, devala, responsive web design, scalable web applications"
         />
+
+        {/* Canonical Link */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* Open Graph / Social Media Tags */}
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Contact Ajmal U - Full Stack Developer | MERN Stack"
+          content="Ajmal U - Full Stack Developer | MERN Stack Expert"
         />
         <meta
           property="og:description"
-          content="Get in touch with Ajmal U, a full-stack developer specializing in MERN stack. Reach out for collaborations, queries, or job opportunities."
+          content="Portfolio of Ajmal U: Innovative full-stack developer specializing in building robust and scalable web applications using cutting-edge technologies."
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourwebsite.com/contact" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={socialImageUrl} />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ajmal U - Full Stack Developer" />
         <meta
-          property="og:image"
-          content="https://yourwebsite.com/yourimage.jpg"
+          name="twitter:description"
+          content="Discover the portfolio of Ajmal U, a skilled full-stack developer creating innovative web solutions."
         />
+        <meta name="twitter:image" content={socialImageUrl} />
+
+        {/* Additional SEO Enhancements */}
         <meta name="robots" content="index, follow" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ContactPage",
-              "name": "Ajmal U - Contact",
-              "url": "https://yourwebsite.com/contact",
-              "description": "Contact Ajmal U for collaborations, inquiries, and job opportunities in full-stack development using the MERN stack."
-            }
-          `}
-        </script>
+        <meta name="author" content="Ajmal U" />
       </Helmet>
 
       <section className="contact section" id="contact">
