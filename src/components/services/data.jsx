@@ -1,20 +1,23 @@
 export const data = {
   "UI/UX Designing": [
-    "User Research: Conduct user research to ensure that my designs are based on real user needs and preferences.",
-    "Information Architecture: I believe that a well-organized and structured website or application is essential for a positive user experience.",
-    "Visual Design: Create visually appealing designs that are consistent with my client's branding and messaging.",
-    "Interaction Design: Design interactive experiences that engage users and drive them towards their goals.",
+    "Comprehensive User Research: Conduct in-depth user interviews and usability testing to uncover deep user insights.",
+    "Strategic Information Architecture: Design intuitive navigation flows that enhance user experience and reduce cognitive load.",
+    "Brand-Aligned Visual Design: Create pixel-perfect designs that seamlessly integrate with your brand's visual identity.",
+    "Interactive Prototyping: Develop high-fidelity prototypes to validate design concepts and user interactions.",
+    "Accessibility-First Design: Ensure designs meet WCAG guidelines for inclusive user experiences."
   ],
   "Frontend Development": [
-    "Responsive Design: I prioritize creating responsive designs that look great on any device, from desktops to mobile phones.",
-    "Cross-Browser Compatibility: I ensure that my code is compatible with all major browsers, including Chrome, Firefox, Safari, and Internet Explorer.",
-    "Performance Optimization: I optimize my code for fast loading times, ensuring that websites and applications load quickly and efficiently.",
-    "Deployment and Maintenance: I have experience in deploying websites in a variety of platforms such as Cyclic, Render, Netlify and AWS."
+    "Responsive & Adaptive Design: Develop fluid layouts that look stunning across all devices and screen sizes.",
+    "Performance-Optimized Code: Implement advanced techniques like code splitting, lazy loading, and efficient state management.",
+    "Modern Framework Expertise: Proficient in React, Next.js, and Vue.js for cutting-edge web applications.",
+    "Cross-Browser & Cross-Platform Compatibility: Rigorous testing to ensure consistent performance everywhere.",
+    "Advanced State Management: Implement Redux, Context API, and other advanced state management solutions."
   ],
   "Backend Development": [
-    "Server-Side Programming: I am proficient in server-side programming with Node.js. Develop robust and scalable web applications.",
-    "Database Management: I have experience working with relational and non-relational databases, such as PostgreSQL and MongoDB.",
-    "API Development: I am proficient in developing RESTful APIs that enable communication between different components of a web application.",
-    "Deployment and Maintenance: I have experience in deploying web applications to cloud platforms such as AWS",
-  ],
+    "Scalable Node.js Architecture: Design robust, microservices-based backend systems that can handle high traffic.",
+    "Advanced Database Solutions: Implement complex database strategies with PostgreSQL, MongoDB, and Redis.",
+    "Secure API Development: Create RESTful and GraphQL APIs with comprehensive security measures.",
+    "Cloud-Native Deployment: Expert in containerization with Docker and orchestration using Kubernetes.",
+    "Performance Monitoring: Implement advanced logging, error tracking, and performance optimization strategies."
+  ]
 };
