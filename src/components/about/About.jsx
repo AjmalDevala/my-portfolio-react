@@ -1,73 +1,41 @@
+import React, { useState } from "react";
 import "./about.css";
 import AboutImg from "../../assets/AboutImg.jpg";
 import resume from "../../assets/Ajmal cv.pdf";
 import Info from "./Info";
-import { Helmet } from "react-helmet-async";
 
 const About = () => {
-  const canonicalUrl = "https://ajmaldevala.netlify.app/"; // Replace with your actual portfolio URL
-  const socialImageUrl =
-    "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = () => {
+    setIsDownloading(true);
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = resume;
+      link.download = "Ajmal_CV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setIsDownloading(false); // Hide loader after the file starts downloading
+    }, 3000); // Adjust the duration if necessary
+  };
+
   return (
-    <>
-      <Helmet>
-        {/* Basic Meta Tags */}
-        <title>Ajmal U - Full Stack Developer | MERN Stack Expert</title>
-        <meta
-          name="description"
-          content="Ajmal U: A passionate full-stack developer crafting scalable web applications with expertise in React, Node.js, Express, and MongoDB. Transforming ideas into innovative digital solutions."
-        />
+    <section className="about section" id="about">
+      <h2 className="section__title">About Me</h2>
+      <span className="section__subtitle">Get to Know Me</span>
 
-        {/* Extended Keywords */}
-        <meta
-          name="keywords"
-          content="Ajmal U, Full Stack Developer, MERN Stack Developer, Web Application Developer, React Developer, Node.js Engineer, MongoDB Expert, JavaScript Specialist, Front-end Developer, Back-end Developer, Web Development, Software Engineer, ajmaldevala, devala, responsive web design, scalable web applications"
-        />
-
-        {/* Canonical Link */}
-        <link rel="canonical" href={canonicalUrl} />
-
-        {/* Open Graph / Social Media Tags */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Ajmal U - Full Stack Developer | MERN Stack Expert"
-        />
-        <meta
-          property="og:description"
-          content="Portfolio of Ajmal U: Innovative full-stack developer specializing in building robust and scalable web applications using cutting-edge technologies."
-        />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content={socialImageUrl} />
-
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ajmal U - Full Stack Developer" />
-        <meta
-          name="twitter:description"
-          content="Discover the portfolio of Ajmal U, a skilled full-stack developer creating innovative web solutions."
-        />
-        <meta name="twitter:image" content={socialImageUrl} />
-
-        {/* Additional SEO Enhancements */}
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Ajmal U" />
-      </Helmet>
-
-      <section className="about section" id="about">
-        <h2 className="section__title">About Me</h2>
-        <span className="section__subtitle">Get to Know Me</span>
-
-        <div className="about__container container grid">
-          <img src={AboutImg} alt="Ajmalu_imag" className="about__img" />
-          <div className="about__data">
-            <Info />
-            <p className="about__description">
-              Experienced Software Developer dedicated to crafting creative
-              solutions. Skilled in designing, developing, and deploying
-              reliable applications to tackle real world problems.
-            </p>
-            <a href={resume} download={""} className="button button--flex">
+      <div className="about__container container grid">
+        <img src={AboutImg} alt="Ajmalu_imag" className="about__img" />
+        <div className="about__data">
+          <Info />
+          <p className="about__description">
+            Experienced Software Developer dedicated to crafting creative
+            solutions. Skilled in designing, developing, and deploying reliable
+            applications to tackle real-world problems.
+          </p>
+          {!isDownloading ? (
+            <button className="button button--flex" onClick={handleDownload}>
               My Resume
               <svg
                 className="button__icon"
@@ -94,11 +62,35 @@ const About = () => {
                   fill="var(--container-color)"
                 ></path>
               </svg>
-            </a>
-          </div>
+            </button>
+          ) : (
+            <div
+              style={{
+                margin: "0", // Remove margin
+                backgroundColor: "transparent", // Transparent background
+                display: "flex",
+                justifyContent: "flex-start", // Align to the start horizontally
+                alignItems: "flex-start", // Align to the start vertically
+                width: "90px",
+                height: "90px", // Fixed height
+                overflow: "hidden",
+                borderRadius: "20px", // Optional: Rounds the corners of the border
+              }}
+            >
+              <img
+                src="https://i.gifer.com/A7Iy.gif"
+                alt="Download Loading GIF"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "fill", // Ensures scaling
+                }}
+              />
+            </div>
+          )}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
