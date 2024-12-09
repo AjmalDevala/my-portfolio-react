@@ -1,64 +1,53 @@
 import { Helmet } from "react-helmet-async";
 
 const Data = () => {
+  const canonicalUrl = "https://ajmaldevala.netlify.app/"; // Replace with your actual portfolio URL
+  const socialImageUrl =
+    "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
   return (
     <>
       <Helmet>
-        {/* SEO Meta Tags */}
-        <html lang="en" />
-        <title>Ajmal U - Full Stack Developer | MERN Stack</title>
+        {/* Basic Meta Tags */}
+        <title>Ajmal U - Full Stack Developer | MERN Stack Expert</title>
         <meta
           name="description"
-          content="Ajmal U, a full-stack developer specializing in building scalable web applications and responsive interfaces using the MERN stack."
-        />
-        <meta
-          name="keywords"
-          content="Ajmal U, Full Stack Developer, MERN Stack, React, Node.js, MongoDB, JavaScript, ajmaldevala, devala"
-        />
-        <meta name="author" content="Ajmal U" />
-        <meta name="robots" content="index, follow" />
-        <meta
-          name="robots"
-          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+          content="Ajmal U: A passionate full-stack developer crafting scalable web applications with expertise in React, Node.js, Express, and MongoDB. Transforming ideas into innovative digital solutions."
         />
 
-        {/* Open Graph Tags for Social Media */}
+        {/* Extended Keywords */}
+        <meta
+          name="keywords"
+          content="Ajmal U, Full Stack Developer, MERN Stack Developer, Web Application Developer, React Developer, Node.js Engineer, MongoDB Expert, JavaScript Specialist, Front-end Developer, Back-end Developer, Web Development, Software Engineer, ajmaldevala, devala, responsive web design, scalable web applications"
+        />
+
+        {/* Canonical Link */}
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* Open Graph / Social Media Tags */}
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Ajmal U - Full Stack Developer | MERN Stack"
+          content="Ajmal U - Full Stack Developer | MERN Stack Expert"
         />
         <meta
           property="og:description"
-          content="Portfolio of Ajmal U, showcasing skills in full-stack development with the MERN stack."
+          content="Portfolio of Ajmal U: Innovative full-stack developer specializing in building robust and scalable web applications using cutting-edge technologies."
         />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.ajmalu.com" // Add your actual website URL
-        />
-        <meta
-          property="og:image"
-          content="https://www.ajmalu.com/path/to/image.jpg" // Use a relevant image for social sharing
-        />
-        <meta
-          property="og:image:alt"
-          content="Ajmal U - Full Stack Developer"
-        />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={socialImageUrl} />
 
-        {/* Twitter Cards */}
-        <meta
-          name="twitter:title"
-          content="Ajmal U - Full Stack Developer | MERN Stack"
-        />
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ajmal U - Full Stack Developer" />
         <meta
           name="twitter:description"
-          content="Portfolio of Ajmal U, showcasing skills in full-stack development with the MERN stack."
+          content="Discover the portfolio of Ajmal U, a skilled full-stack developer creating innovative web solutions."
         />
-        <meta
-          name="twitter:image"
-          content="../../assets/AboutImg.jpg" // Use a relevant image for Twitter sharing
-        />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={socialImageUrl} />
+
+        {/* Additional SEO Enhancements */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Ajmal U" />
       </Helmet>
       <div className="home__data">
         <h1 className="home__title">
