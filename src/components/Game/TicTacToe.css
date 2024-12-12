@@ -1,0 +1,117 @@
+/* TicTacToe.css */
+body {
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.start-screen {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.start-screen h1 {
+    color: #4a90e2;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.start-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #3a7bd5;
+}
+
+.game-container {
+    text-align: center;
+    /* background-color: #1e1e1e; */
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.game-title {
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+
+.cell:hover {
+    background-color: #3c3c3c;
+}
+
+.cell.x {
+    color: #4a90e2; /* Blue for X */
+}
+
+.cell.o {
+    color: #e74c3c; /* Red for O */
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+.game-status {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.game-status.winner {
+    color: #2ecc71; /* Green for winner */
+}
+
+.game-status.draw {
+    color: #f39c12; /* Yellow for draw */
+}
+
+.reset-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #3a7bd5;
+}
