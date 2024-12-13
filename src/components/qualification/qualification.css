@@ -34,9 +34,9 @@
   transition: all 0.3s ease;
 }
 
-.qualification__button:hover {
+/* .qualification__button:hover {
   background-color: rgba(0, 0, 0, 0.05);
-}
+} */
 
 .qualification__active {
   background-color: var(--primary-color, #007bff);
