@@ -3,7 +3,7 @@ import Layout from "./components/layout/Layout";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
-// import Skills from "./components/skills/Skills";
+import Skills from "./components/skills/Skills";
 import Services from "./components/services/Services";
 // import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
@@ -14,7 +14,8 @@ import TicTacToe from "./components/Game/TicTacToe";
 
 const App = () => {
   const canonicalUrl = "https://ajmaldevala.netlify.app/"; // Replace with your actual portfolio URL
-  const socialImageUrl = "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
+  const socialImageUrl =
+    "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
   return (
     <Layout>
       <Helmet>
@@ -64,11 +65,11 @@ const App = () => {
       <main className="main">
         <Home />
         <About />
-        {/* <Skills /> */}
+        <Skills />
         <Services />
         {/* <Portfolio /> */}
         <Qualifications />
-        <TicTacToe/>
+        <TicTacToe />
         <Contact />
       </main>
       <Footer />
