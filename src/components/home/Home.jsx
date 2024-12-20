@@ -22,7 +22,6 @@ const Home = () => {
       // Limit rotation to ±20 degrees for realism
       const rotateX = Math.min(Math.max(-20, deltaY / 10), 20);
       const rotateY = Math.min(Math.max(-20, -deltaX / 10), 20);
-
       imgRef.current.style.transform = `
         perspective(1000px) 
         rotateX(${rotateX}deg) 
@@ -58,7 +57,9 @@ const Home = () => {
       imgRef.current?.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
-
+  const canonicalUrl = "https://ajmaldevala.netlify.app/"; // Replace with your actual portfolio URL
+  const socialImageUrl =
+    "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
   return (
     <>
       <Helmet>
