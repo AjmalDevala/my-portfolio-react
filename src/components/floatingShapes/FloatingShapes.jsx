@@ -63,7 +63,7 @@ const FloatingShapes = () => {
 
   return (
     <>
-      <Helmet>
+     <Helmet>
         {/* Basic Meta Tags */}
         <title>Ajmal U - Full Stack Developer | MERN Stack Expert</title>
         <meta
