@@ -7,7 +7,7 @@ const Footer = () => {
     "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
   return (
     <>
-      <Helmet>
+     <Helmet>
         {/* Basic Meta Tags */}
         <title>Ajmal U - Full Stack Developer | MERN Stack Expert</title>
         <meta
