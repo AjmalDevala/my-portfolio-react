@@ -8,7 +8,7 @@ const Portfolio = () => {
     "https://ajmaldevala.netlify.app/assets/AboutImg-14b68c43.jpg"; // Replace with your social sharing image
   return (
     <>
-      <Helmet>
+     <Helmet>
         {/* Basic Meta Tags */}
         <title>Ajmal U - Full Stack Developer | MERN Stack Expert</title>
         <meta
@@ -51,7 +51,6 @@ const Portfolio = () => {
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Ajmal U" />
       </Helmet>
-
       <section className="work section" id="portfolio">
         <h2 className="section__title">Portfolio</h2>
         <span className="section__subtitle">Most recent works</span>
