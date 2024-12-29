@@ -67,10 +67,10 @@ const Modal = ({ close, show, title }) => {
 
           <h3 className="services__modal-title">{title}</h3>
           <ul className="services__modal-services grid">
-            {service?.map((desc, index) => (
+            {service?.map((doc, index) => (
               <li key={index} className="services__modal-service">
                 <i className="uil uil-check-circle services__modal-icon"></i>
-                <p className="services__modal-info">{desc}</p>
+                <p className="services__modal-info">{doc}</p>
               </li>
             ))}
           </ul>
