@@ -1,23 +1,23 @@
 export const data = {
   "UI/UX Designing": [
-    "Comprehensive User Research: Conduct in-depth user interviews and usability testing to uncover deep user insights.",
-    "Strategic Information Architecture: Design intuitive navigation flows that enhance user experience and reduce cognitive load.",
-    "Brand-Aligned Visual Design: Create pixel-perfect designs that seamlessly integrate with your brand's visual identity.",
-    "Interactive Prototyping: Develop high-fidelity prototypes to validate design concepts and user interactions.",
-    "Accessibility-First Design: Ensure designs meet WCAG guidelines for inclusive user experiences."
+    "Conduct user research and usability testing to understand user needs.",
+    "Design clear navigation and user-friendly interfaces.",
+    "Create visually appealing designs that match your brand.",
+    "Develop interactive prototypes to test ideas.",
+    "Ensure designs are accessible and meet WCAG guidelines."
   ],
   "Frontend Development": [
-    "Responsive & Adaptive Design: Develop fluid layouts that look stunning across all devices and screen sizes.",
-    "Performance-Optimized Code: Implement advanced techniques like code splitting, lazy loading, and efficient state management.",
-    "Modern Framework Expertise: Proficient in React, Next.js, and Vue.js for cutting-edge web applications.",
-    "Cross-Browser & Cross-Platform Compatibility: Rigorous testing to ensure consistent performance everywhere.",
-    "Advanced State Management: Implement Redux, Context API, and other advanced state management solutions."
+    "Build responsive designs for all devices.",
+    "Write clean, optimized code for fast performance.",
+    "Expert in modern frameworks like React, Next.js, and Vue.js.",
+    "Ensure compatibility across browsers and platforms.",
+    "Use advanced state management tools like Redux and Context API."
   ],
   "Backend Development": [
-    "Scalable Node.js Architecture: Design robust, microservices-based backend systems that can handle high traffic.",
-    "Advanced Database Solutions: Implement complex database strategies with PostgreSQL, MongoDB, and Redis.",
-    "Secure API Development: Create RESTful and GraphQL APIs with comprehensive security measures.",
-    "Cloud-Native Deployment: Expert in containerization with Docker and orchestration using Kubernetes.",
-    "Performance Monitoring: Implement advanced logging, error tracking, and performance optimization strategies."
+    "Create scalable backend systems using Node.js.",
+    "Work with databases like PostgreSQL, MongoDB, and Redis.",
+    "Develop secure RESTful and GraphQL APIs.",
+    "Deploy cloud-based solutions with Docker and Kubernetes.",
+    "Monitor performance and optimize for reliability."
   ]
 };
