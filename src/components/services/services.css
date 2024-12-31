@@ -70,7 +70,7 @@
 }
 
 .services__modal-content {
-  width: 500px;
+  width: 620px;
   position: relative;
   background-color: var(--container-color);
   padding: 4.5rem 2.5rem 2.5rem;
@@ -81,7 +81,7 @@
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  font: 1.5rem;
+  font: 1.8rem;
   color: var(--title-color);
   cursor: pointer;
 }
