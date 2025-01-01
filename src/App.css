@@ -27,7 +27,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-behavior: smooth;
 }
 body {
   margin: 0; /* Ensure there's no default margin */
